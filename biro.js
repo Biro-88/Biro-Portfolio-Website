@@ -26,6 +26,12 @@ function typeEffect() {
   setTimeout(typeEffect, isDeleting ? 50 : 150);
 }
 
+function submitForm(event) {
+  event.preventDefault(); // Prevent default form submission
+  alert("Sent"); // Show pop-up message
+  event.target.submit(); // Submit the form
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   typeEffect();
 });
