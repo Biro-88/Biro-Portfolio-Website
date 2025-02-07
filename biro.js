@@ -41,9 +41,13 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Mobile Menu Toggle
-const menuToggle = document.getElementById('menu-toggle');
-const navLinks = document.querySelector('.nav-links');
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.getElementById("menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
 
-menuToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
+  menuToggle.addEventListener("click", function () {
+    navLinks.style.display = navLinks.style.display === "flex" ? "none" : "flex";
+  });
 });
+
+
